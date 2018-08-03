@@ -31,3 +31,16 @@
   licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
   url: http://www.jetbrains.org
   skip: true
+- artifact: com.google.dagger:+:+
+  name: Dagger
+  copyrightHolder: The Dagger Authors
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/google/dagger
+- artifact: javax.inject:javax.inject:+
+  name: The javax.inject API
+  copyrightHolder: The JSR-330 Expert Group
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: http://code.google.com/p/atinject
+  skip: true
