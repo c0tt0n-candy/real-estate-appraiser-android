@@ -44,3 +44,16 @@
   licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
   url: http://code.google.com/p/atinject
   skip: true
+- artifact: com.jakewharton:butterknife:+
+  name: Butterknife
+  copyrightHolder: Jake Wharton
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/JakeWharton/butterknife
+- artifact: com.jakewharton:butterknife-annotations:+
+  name: Butterknife Annotations
+  copyrightHolder: Jake Wharton
+  license: The Apache Software License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/JakeWharton/butterknife
+  skip: true
