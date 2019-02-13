@@ -12,5 +12,4 @@ abstract class ActivityBuildingModule {
     @ActivityScope
     @ContributesAndroidInjector(modules = [MainActivityModule::class])
     abstract fun contributeMainActivity(): MainActivity
-
 }

@@ -13,14 +13,6 @@ import javax.inject.Named
 @Module
 abstract class BaseActivityModule {
 
-    @Binds
-    @ActivityScope
-    abstract fun bindActivity(appCompatActivity: AppCompatActivity): Activity
-
-    @Binds
-    @ActivityScope
-    abstract fun bindActivityContext(activity: Activity): Context
-
     @Module
     companion object {
         private const val ACTIVITY_FRAGMENT_MANAGER = "BaseActivityModule.activityFragmentManager"
@@ -31,4 +23,12 @@ abstract class BaseActivityModule {
         @ActivityScope
         fun provideActivityFragmentManager(activity: AppCompatActivity): FragmentManager = activity.supportFragmentManager
     }
+
+    @Binds
+    @ActivityScope
+    abstract fun bindActivity(appCompatActivity: AppCompatActivity): Activity
+
+    @Binds
+    @ActivityScope
+    abstract fun bindActivityContext(activity: Activity): Context
 }

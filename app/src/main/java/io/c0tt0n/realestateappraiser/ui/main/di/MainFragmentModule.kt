@@ -15,5 +15,4 @@ abstract class MainFragmentModule {
     @Named(BaseFragmentModule.FRAGMENT)
     @FragmentScope
     abstract fun bindFragment(mainFragment: MainFragment): Fragment
-
 }
