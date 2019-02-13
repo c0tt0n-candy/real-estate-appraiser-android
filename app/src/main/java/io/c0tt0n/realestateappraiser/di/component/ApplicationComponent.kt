@@ -21,5 +21,4 @@ interface ApplicationComponent : AndroidInjector<AppraiserApplication> {
 
         fun build(): ApplicationComponent
     }
-
 }

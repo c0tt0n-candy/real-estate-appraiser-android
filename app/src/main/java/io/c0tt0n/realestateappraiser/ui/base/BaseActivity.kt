@@ -9,10 +9,10 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
 
     protected fun addFragment(@IdRes containerViewId: Int, fragment: Fragment) {
         supportFragmentManager.beginTransaction()
-            .add(containerViewId, fragment)
-            .commit()
+                .add(containerViewId, fragment)
+                .commit()
     }
 
     protected fun showDialogFragment(dialogFragment: DialogFragment, tag: String) =
-        dialogFragment.show(supportFragmentManager, tag)
+            dialogFragment.show(supportFragmentManager, tag)
 }
