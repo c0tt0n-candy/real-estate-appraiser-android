@@ -10,7 +10,7 @@ import io.c0tt0n.realestateappraiser.ui.base.BaseFragment
 class MainFragment : BaseFragment() {
 
     companion object {
-        fun getFragment(): MainFragment = MainFragment()
+        fun newInstance(): MainFragment = MainFragment()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

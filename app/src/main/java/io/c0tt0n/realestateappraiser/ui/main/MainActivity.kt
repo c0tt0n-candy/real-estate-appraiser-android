@@ -11,7 +11,7 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
-            addFragment(R.id.fragment_container, MainFragment.getFragment())
+            addFragment(R.id.fragment_container, MainFragment.newInstance())
         }
     }
 }
