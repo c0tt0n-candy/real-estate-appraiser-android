@@ -2,8 +2,8 @@ package io.c0tt0n.realestateappraiser.ui.base.di
 
 import android.app.Activity
 import android.content.Context
-import android.support.v4.app.FragmentManager
-import android.support.v7.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
+import androidx.appcompat.app.AppCompatActivity
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

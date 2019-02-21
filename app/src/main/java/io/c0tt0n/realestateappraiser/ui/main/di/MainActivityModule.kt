@@ -1,6 +1,6 @@
 package io.c0tt0n.realestateappraiser.ui.main.di
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import dagger.Binds
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
