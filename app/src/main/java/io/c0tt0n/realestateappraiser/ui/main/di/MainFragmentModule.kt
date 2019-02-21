@@ -1,6 +1,6 @@
 package io.c0tt0n.realestateappraiser.ui.main.di
 
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import dagger.Binds
 import dagger.Module
 import io.c0tt0n.realestateappraiser.di.scope.FragmentScope
