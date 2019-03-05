@@ -1,7 +1,5 @@
 package io.c0tt0n.realestateappraiser.di.component
 
-import android.app.Application
-import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
@@ -15,10 +13,5 @@ import javax.inject.Singleton
 interface ApplicationComponent : AndroidInjector<AppraiserApplication> {
 
     @Component.Builder
-    interface Builder {
-        @BindsInstance
-        fun application(application: Application): Builder
-
-        fun build(): ApplicationComponent
-    }
+    abstract class Builder : AndroidInjector.Builder<AppraiserApplication>()
 }
