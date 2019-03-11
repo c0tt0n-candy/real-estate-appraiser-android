@@ -3,6 +3,7 @@ package io.c0tt0n.realestateappraiser.ui.main
 import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
 import io.c0tt0n.realestateappraiser.R
+import io.c0tt0n.realestateappraiser.util.addFragment
 
 class MainActivity : DaggerAppCompatActivity() {
 
