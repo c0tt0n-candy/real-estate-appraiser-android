@@ -6,11 +6,10 @@ import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import io.c0tt0n.realestateappraiser.di.scope.ActivityScope
 import io.c0tt0n.realestateappraiser.di.scope.FragmentScope
-import io.c0tt0n.realestateappraiser.ui.base.di.BaseActivityModule
 import io.c0tt0n.realestateappraiser.ui.main.MainActivity
 import io.c0tt0n.realestateappraiser.ui.main.MainFragment
 
-@Module(includes = [BaseActivityModule::class])
+@Module
 abstract class MainActivityModule {
 
     @Binds
@@ -18,6 +17,6 @@ abstract class MainActivityModule {
     abstract fun bindAppCompatActivity(mainActivity: MainActivity): AppCompatActivity
 
     @FragmentScope
-    @ContributesAndroidInjector(modules = [MainFragmentModule::class])
+    @ContributesAndroidInjector
     abstract fun contributeMainFragment(): MainFragment
 }
