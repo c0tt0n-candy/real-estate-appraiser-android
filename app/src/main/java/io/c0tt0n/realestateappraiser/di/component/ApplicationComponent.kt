@@ -9,7 +9,10 @@ import io.c0tt0n.realestateappraiser.di.module.ApplicationModule
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [(AndroidSupportInjectionModule::class), (ApplicationModule::class), ActivityBindingModule::class])
+@Component(modules = [
+    AndroidSupportInjectionModule::class,
+    ApplicationModule::class,
+    ActivityBindingModule::class])
 interface ApplicationComponent : AndroidInjector<AppraiserApplication> {
 
     @Component.Builder

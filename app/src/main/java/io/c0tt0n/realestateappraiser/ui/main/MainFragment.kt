@@ -6,16 +6,26 @@ import android.view.View
 import android.view.ViewGroup
 import dagger.android.support.DaggerFragment
 import io.c0tt0n.realestateappraiser.R
+import javax.inject.Inject
 
-class MainFragment : DaggerFragment() {
+class MainFragment @Inject constructor() : DaggerFragment(), MainContract.View {
 
-    companion object {
-        fun newInstance(): MainFragment = MainFragment()
-    }
+    @Inject
+    lateinit var presenter: MainContract.Presenter
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_main, container, false)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        presenter.takeView(this)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        presenter.dropView()
     }
 }
