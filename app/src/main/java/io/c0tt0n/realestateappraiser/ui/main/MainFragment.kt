@@ -16,7 +16,7 @@ class MainFragment @Inject constructor() : DaggerFragment(), MainContract.View {
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.main_frag, container, false)
     }
 
     override fun onResume() {

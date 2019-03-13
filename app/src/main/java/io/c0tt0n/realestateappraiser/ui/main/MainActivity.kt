@@ -13,7 +13,7 @@ class MainActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.main_act)
 
         supportFragmentManager.findFragmentById(R.id.fragment_container) as MainFragment? ?: run {
             replaceFragment(R.id.fragment_container, fragment)
