@@ -1,4 +1,4 @@
-package io.c0tt0n.realestateappraiser.di.builder
+package io.c0tt0n.realestateappraiser.di.module
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -7,7 +7,7 @@ import io.c0tt0n.realestateappraiser.ui.main.MainActivity
 import io.c0tt0n.realestateappraiser.ui.main.di.MainActivityModule
 
 @Module
-abstract class ActivityBuildingModule {
+abstract class ActivityBindingModule {
 
     @ActivityScope
     @ContributesAndroidInjector(modules = [MainActivityModule::class])

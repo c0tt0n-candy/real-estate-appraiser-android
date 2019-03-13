@@ -1,23 +1,22 @@
 package io.c0tt0n.realestateappraiser.ui.main.di
 
-import androidx.appcompat.app.AppCompatActivity
 import dagger.Binds
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import io.c0tt0n.realestateappraiser.di.scope.ActivityScope
 import io.c0tt0n.realestateappraiser.di.scope.FragmentScope
-import io.c0tt0n.realestateappraiser.ui.base.di.BaseActivityModule
-import io.c0tt0n.realestateappraiser.ui.main.MainActivity
+import io.c0tt0n.realestateappraiser.ui.main.MainContract
 import io.c0tt0n.realestateappraiser.ui.main.MainFragment
+import io.c0tt0n.realestateappraiser.ui.main.MainPresenter
 
-@Module(includes = [BaseActivityModule::class])
+@Module
 abstract class MainActivityModule {
 
-    @Binds
     @ActivityScope
-    abstract fun bindAppCompatActivity(mainActivity: MainActivity): AppCompatActivity
+    @Binds
+    abstract fun bindMainPresenter(presenter: MainPresenter): MainContract.Presenter
 
     @FragmentScope
-    @ContributesAndroidInjector(modules = [MainFragmentModule::class])
+    @ContributesAndroidInjector
     abstract fun contributeMainFragment(): MainFragment
 }
