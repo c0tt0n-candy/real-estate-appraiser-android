@@ -1,8 +1,8 @@
-package io.c0tt0n.realestateappraiser.ui.standards
+package io.c0tt0n.realestateappraiser.ui.chapters
 
 import io.c0tt0n.realestateappraiser.ui.BaseContract
 
-interface StandardsContract {
+interface ChaptersContract {
 
     interface View : BaseContract.View<Presenter>
 

@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.standards.StandardsActivity" />
+        <activity android:name=".ui.chapters.ChaptersActivity" />
     </application>
 
 </manifest>

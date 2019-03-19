@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">RealEstateAppraiser</string>
 
-    <string name="label_standards">Standards</string>
+    <string name="label_chapters">Chapters</string>
     <string name="label_favorites">Favorites</string>
     <string name="label_about">About</string>
 </resources>

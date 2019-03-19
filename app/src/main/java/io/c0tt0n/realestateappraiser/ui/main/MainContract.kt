@@ -5,13 +5,13 @@ import io.c0tt0n.realestateappraiser.ui.BaseContract
 interface MainContract {
 
     interface View : BaseContract.View<Presenter> {
-        fun navigateToStandards()
+        fun navigateToChapters()
         fun navigateToFavorites()
         fun navigateToAbout()
     }
 
     interface Presenter : BaseContract.Presenter<View> {
-        fun onClickStandards()
+        fun onClickChapters()
         fun onClickFavorites()
         fun onClickAbout()
     }
