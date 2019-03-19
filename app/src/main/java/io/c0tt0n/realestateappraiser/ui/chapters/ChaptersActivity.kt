@@ -10,13 +10,13 @@ import io.c0tt0n.realestateappraiser.util.replaceFragment
 import kotlinx.android.synthetic.main.standards_act.*
 import javax.inject.Inject
 
-class StandardsActivity : DaggerAppCompatActivity() {
+class ChaptersActivity : DaggerAppCompatActivity() {
 
     @Inject
-    lateinit var fragment: StandardsFragment
+    lateinit var fragment: ChaptersFragment
 
     companion object {
-        fun newInstance(context: Context?): Intent = Intent(context, StandardsActivity::class.java)
+        fun newInstance(context: Context?): Intent = Intent(context, ChaptersActivity::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,7 @@ class StandardsActivity : DaggerAppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        supportFragmentManager.findFragmentById(R.id.fragment_container) as StandardsFragment?
+        supportFragmentManager.findFragmentById(R.id.fragment_container) as ChaptersFragment?
                 ?: run {
                     replaceFragment(R.id.fragment_container, fragment)
                 }

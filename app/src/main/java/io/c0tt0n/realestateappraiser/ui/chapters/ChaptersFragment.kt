@@ -8,10 +8,10 @@ import dagger.android.support.DaggerFragment
 import io.c0tt0n.realestateappraiser.R
 import javax.inject.Inject
 
-class StandardsFragment @Inject constructor() : DaggerFragment(), StandardsContract.View {
+class ChaptersFragment @Inject constructor() : DaggerFragment(), ChaptersContract.View {
 
     @Inject
-    lateinit var presenter: StandardsContract.Presenter
+    lateinit var presenter: ChaptersContract.Presenter
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,

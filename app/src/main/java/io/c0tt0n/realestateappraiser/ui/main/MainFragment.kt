@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import dagger.android.support.DaggerFragment
 import io.c0tt0n.realestateappraiser.R
-import io.c0tt0n.realestateappraiser.ui.chapters.StandardsActivity
+import io.c0tt0n.realestateappraiser.ui.chapters.ChaptersActivity
 import io.c0tt0n.realestateappraiser.util.setOnSingleClickListener
 import kotlinx.android.synthetic.main.main_frag.*
 import javax.inject.Inject
@@ -42,7 +42,7 @@ class MainFragment @Inject constructor() : DaggerFragment(), MainContract.View {
 
     // [MainContract.View]
     override fun navigateToStandards() {
-        startActivity(StandardsActivity.newInstance(context))
+        startActivity(ChaptersActivity.newInstance(context))
     }
 
     override fun navigateToFavorites() {
