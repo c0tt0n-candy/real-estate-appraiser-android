@@ -25,7 +25,7 @@ class MainFragment @Inject constructor() : DaggerFragment(), MainContract.View {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        standards_card.setOnSingleClickListener { presenter.onClickStandards() }
+        chapters_card.setOnSingleClickListener { presenter.onClickChapters() }
         favorites_card.setOnSingleClickListener { presenter.onClickFavorites() }
         about_card.setOnSingleClickListener { presenter.onClickAbout() }
     }
@@ -41,7 +41,7 @@ class MainFragment @Inject constructor() : DaggerFragment(), MainContract.View {
     }
 
     // [MainContract.View]
-    override fun navigateToStandards() {
+    override fun navigateToChapters() {
         startActivity(ChaptersActivity.newInstance(context))
     }
 

@@ -14,8 +14,8 @@ class MainPresenter @Inject constructor() : MainContract.Presenter {
         view = null
     }
 
-    override fun onClickStandards() {
-        view?.navigateToStandards()
+    override fun onClickChapters() {
+        view?.navigateToChapters()
     }
 
     override fun onClickFavorites() {

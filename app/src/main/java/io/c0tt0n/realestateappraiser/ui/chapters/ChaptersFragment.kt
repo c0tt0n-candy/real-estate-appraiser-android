@@ -16,7 +16,7 @@ class ChaptersFragment @Inject constructor() : DaggerFragment(), ChaptersContrac
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.standards_frag, container, false)
+        return inflater.inflate(R.layout.chapters_frag, container, false)
     }
 
     override fun onResume() {

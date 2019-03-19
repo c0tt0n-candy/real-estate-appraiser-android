@@ -7,7 +7,7 @@ import android.view.MenuItem
 import dagger.android.support.DaggerAppCompatActivity
 import io.c0tt0n.realestateappraiser.R
 import io.c0tt0n.realestateappraiser.util.replaceFragment
-import kotlinx.android.synthetic.main.standards_act.*
+import kotlinx.android.synthetic.main.chapters_act.*
 import javax.inject.Inject
 
 class ChaptersActivity : DaggerAppCompatActivity() {
@@ -21,7 +21,7 @@ class ChaptersActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.standards_act)
+        setContentView(R.layout.chapters_act)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
