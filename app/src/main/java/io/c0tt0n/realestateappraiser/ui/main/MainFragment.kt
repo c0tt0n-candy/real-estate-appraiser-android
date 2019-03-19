@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import dagger.android.support.DaggerFragment
 import io.c0tt0n.realestateappraiser.R
-import io.c0tt0n.realestateappraiser.ui.standards.StandardsActivity
+import io.c0tt0n.realestateappraiser.ui.chapters.StandardsActivity
 import io.c0tt0n.realestateappraiser.util.setOnSingleClickListener
 import kotlinx.android.synthetic.main.main_frag.*
 import javax.inject.Inject

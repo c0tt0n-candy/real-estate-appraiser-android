@@ -1,9 +1,9 @@
-package io.c0tt0n.realestateappraiser.ui.standards.di
+package io.c0tt0n.realestateappraiser.ui.chapters.di
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import io.c0tt0n.realestateappraiser.di.scope.FragmentScope
-import io.c0tt0n.realestateappraiser.ui.standards.StandardsFragment
+import io.c0tt0n.realestateappraiser.ui.chapters.StandardsFragment
 
 @Module
 abstract class StandardsViewModule {

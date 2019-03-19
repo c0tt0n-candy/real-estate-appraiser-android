@@ -1,4 +1,4 @@
-package io.c0tt0n.realestateappraiser.ui.standards
+package io.c0tt0n.realestateappraiser.ui.chapters
 
 import android.content.Context
 import android.content.Intent

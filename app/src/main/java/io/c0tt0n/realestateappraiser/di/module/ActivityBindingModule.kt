@@ -6,9 +6,9 @@ import io.c0tt0n.realestateappraiser.di.scope.ActivityScope
 import io.c0tt0n.realestateappraiser.ui.main.MainActivity
 import io.c0tt0n.realestateappraiser.ui.main.di.MainModule
 import io.c0tt0n.realestateappraiser.ui.main.di.MainViewModule
-import io.c0tt0n.realestateappraiser.ui.standards.StandardsActivity
-import io.c0tt0n.realestateappraiser.ui.standards.di.StandardsModule
-import io.c0tt0n.realestateappraiser.ui.standards.di.StandardsViewModule
+import io.c0tt0n.realestateappraiser.ui.chapters.StandardsActivity
+import io.c0tt0n.realestateappraiser.ui.chapters.di.StandardsModule
+import io.c0tt0n.realestateappraiser.ui.chapters.di.StandardsViewModule
 
 @Module
 abstract class ActivityBindingModule {
